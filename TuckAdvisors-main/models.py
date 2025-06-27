@@ -5,4 +5,4 @@ from db import Base
 class gptOutput(Base):
     __tablename__ = "gptOutput"
     id = Column(Integer, primary_key=True, index=True)
-    content = Column(Text, nullable = False)
+    content = Column(Text, nullable = False) 
