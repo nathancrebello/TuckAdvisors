@@ -70,4 +70,4 @@ def update_gptOutput(update: UpdateRequest, database: Session = Depends(get_db))
     record.content = record.content.rstrip()+" "+update.text.strip()
     database.add(record)
     database.commit()
-    return record.content
+    return record.content 
